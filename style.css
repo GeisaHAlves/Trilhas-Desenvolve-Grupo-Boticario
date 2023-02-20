@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #33475B;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+header {
+    background-color: #FFFFFF;
+    height: 80px;
+    display: flex;
+}
+
+.container-elementos-header {
+    width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-principal {
+    color: #0000EE;
+    font-weight: 24px;
+}
+
+.label-pesquisa {
+    background-color: #D81E8C;
+    height: 40px;
+    padding: 12px;
+    border-radius: 4px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.input-pesquisa {
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    outline: none;
+}
+
+::placeholder {
+    color: #FF97D3;
+}
