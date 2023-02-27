@@ -50,3 +50,96 @@ header {
 ::placeholder {
     color: #FF97D3;
 }
+
+.trilhas-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: center;
+ }
+
+.card {
+    background: #F5F5F5;
+    width: 400px; 
+    height: 444px;
+    border-radius: 4px;
+    padding: 32px;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+.card h2 {
+    color: #364372;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.card p {
+    color: #000000;
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    margin-top: 24px;
+}
+
+.card button {
+    width: 138.77px;
+    height: 47.48px;
+    border: 1px solid #264FEC;
+    border-radius: 4px;
+    
+    color: #264FEC;   
+    font-family: 'IBM Plex Sans';
+    font-size: 14px;
+    line-height: 18px;
+    box-sizing: border-box;
+    
+    
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+    padding: 32px;
+
+
+}
+
+.informacoes-footer {
+   display:  flex;
+   align-items: center;
+}
+
+.social {
+    text-align: center;
+}
+
+.rodape-social {
+    display: flex;
+    list-style: none;
+}
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.rodape-midia {
+    display: block;
+    width: 42px;
+    height: 42px;
+    margin: 2rem 1rem;
+}
+
+.rodape-link {
+    display: inline-block;
+    margin: 0 .5rem .7rem;
+}
