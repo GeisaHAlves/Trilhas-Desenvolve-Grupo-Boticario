@@ -51,95 +51,115 @@ header {
     color: #FF97D3;
 }
 
+/* Trilhas */
+
 .trilhas-container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 40px;
-    justify-content: center;
+    gap: 32px;
  }
 
-.card {
+ .card {
+    width: calc((100% - 64px) /3);
     background: #F5F5F5;
-    width: 400px; 
-    height: 444px;
     border-radius: 4px;
-    padding: 32px;
-    box-sizing: border-box;
-    margin: 20px auto;
+    padding: 32px 32px 86px;
+    position: relative;
+    /*box-sizing: border-box;
+    margin: 20px auto; */
 }
 
-.card h2 {
+.titulo-trilha {
     color: #364372;
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 31px;
+    margin-bottom: 24px;
+
 }
 
-.card p {
-    color: #000000;
+.paragrafo-trilha {
+    /* color: #000000;
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 21px;
-    margin-top: 24px;
+    line-height: 21px; */
+    margin-bottom: 16px;
 }
 
-.card button {
-    width: 138.77px;
-    height: 47.48px;
+.link-ementa {
     border: 1px solid #264FEC;
     border-radius: 4px;
-    
-    color: #264FEC;   
-    font-family: 'IBM Plex Sans';
-    font-size: 14px;
-    line-height: 18px;
-    box-sizing: border-box;
-    
-    
-}
-
-.rodape {
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    align-items: center;
-    padding: 32px;
-
-
-}
-
-.informacoes-footer {
-   display:  flex;
-   align-items: center;
-}
-
-.social {
+    padding:16px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 32px;
+    width: 160px;
+    height: 54px;
+    color: #264FEC;
+    transition: 0.3 all;
     text-align: center;
 }
 
-.rodape-social {
-    display: flex;
-    list-style: none;
+.link-ementa:hover {
+    background-color: #264FEC;
+    color: #FFFFFF;
+    border-color: #0000D6;
 }
 
-.rodape-links {
+/* Rodapé */
+
+footer {
+    background-color: #FFFFFF;
+    height: 110px;
+    display: flex;
+}
+
+.container-elementos-footer {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-logos {
+    display: flex;
+    gap: 24px;
+}
+
+.container-links {
     display: flex;
     flex-direction: column;
+    gap: 8px;
     
 }
 
-.rodape-midia {
-    display: block;
-    width: 42px;
-    height: 42px;
-    margin: 2rem 1rem;
+.container-links a {
+    text-decoration: none;
+    color: #000000;
 }
 
-.rodape-link {
-    display: inline-block;
-    margin: 0 .5rem .7rem;
+.container-direita {
+    display: flex;
+    gap: 54px;
+    align-items: center;
+}
+
+.container-icones {
+    display: flex;
+    gap: 16px;
+}
+
+.container-midias {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
 }
